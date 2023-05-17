@@ -6,42 +6,142 @@
 
 body {
     height: 100vh;
+    display: flex;
     background-color: black;
     color: white;
 }
 
 div.clock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 50vh;
-    width: 50vh;
+    position: relative;
+    height: 55vh;
+    width: 55vh;
+    margin: auto;
     border: 4px solid white;
     border-radius: 50%;
 }
 
+div.numbers {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transform: rotate(0deg);
+}
+
+div.numbers.number1 {
+    transform: rotate(30deg);
+}
+
+.nbrValue1 {
+    transform: rotate(-30deg);
+}
+
+div.numbers.number2 {
+    transform: rotate(60deg);
+}
+
+.nbrValue2 {
+    transform: rotate(-60deg);
+}
+
+div.numbers.number3 {
+    transform: rotate(90deg);
+}
+
+.nbrValue3 {
+    transform: rotate(-90deg);
+}
+
+div.numbers.number4 {
+    transform: rotate(120deg);
+}
+
+.nbrValue4 {
+    transform: rotate(-120deg);
+}
+
+div.numbers.number5 {
+    transform: rotate(150deg);
+}
+
+.nbrValue5 {
+    transform: rotate(-150deg);
+}
+
+div.numbers.number6 {
+    transform: rotate(180deg);
+}
+
+.nbrValue6 {
+    transform: rotate(-180deg);
+}
+
+div.numbers.number7 {
+    transform: rotate(210deg);
+}
+
+.nbrValue7 {
+    transform: rotate(-210deg);
+}
+
+div.numbers.number8 {
+    transform: rotate(240deg);
+}
+
+.nbrValue8 {
+    transform: rotate(-240deg);
+}
+
+div.numbers.number9 {
+    transform: rotate(270deg);
+}
+
+.nbrValue9 {
+    transform: rotate(-270deg);
+}
+
+div.numbers.number10 {
+    transform: rotate(300deg);
+}
+
+.nbrValue10 {
+    transform: rotate(-300deg);
+}
+
+div.numbers.number11 {
+    transform: rotate(330deg);
+}
+
+.nbrValue11 {
+    transform: rotate(-330deg);
+}
+
+
+
 div.clock::after {
-    display: block;
     content: "";
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 1vh;
-    width: 1vh;
+    height: 1.2vh;
+    width: 1.2vh;
     background-color: white;
     border-radius: 50%;
 }
+
 div.hours {
     position: absolute;
     left: 50%;
     top: 20%;
     height: 30%;
-    width: 4px;
+    width: 5px;
     transform-origin: 50% 100%;
     background-color: white;
-    border-radius: 40% 40% 0 0 ;
+    border-radius: 40% 40% 0 0;
 }
 
 div.minutes {
@@ -52,20 +152,21 @@ div.minutes {
     width: 4px;
     transform-origin: 50% 100%;
     background-color: white;
-    border-radius: 40% 40% 0 0 ;
+    border-radius: 40% 40% 0 0;
 }
 
 div.seconds {
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 10%;
     transform-origin: 50% 100%;
-    height: 45%;
+    height: 40%;
     width: 3px;
     background-color: white;
-    border-radius: 40% 40% 0 0 ;
+    border-radius: 40% 40% 0 0;
 
 }
+
 
 div.digitalClock {
     position: absolute;
